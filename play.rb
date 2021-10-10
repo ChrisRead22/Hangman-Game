@@ -17,11 +17,12 @@ class Hangman
 
     def begin
 
-        puts "New game started... your clue is #{ @word.first }"
+        puts "New game started..." 
+        puts your clue is 
         puts "Enter a letter"
         guess = gets.chomp
 
-        puts "You guessed #{guess}"
+        
     end
 
 end
