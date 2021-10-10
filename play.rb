@@ -17,8 +17,8 @@ class Hangman
 
     def begin
 
-        puts "New game started... your word is #{ @word.first.size } " 
-        puts your clue is #{ @word.last }"
+        puts "New game started... your word is #{ @word.first.size } characters long" 
+        puts "Clue: #{ @word.last }"
         puts "Enter a letter"
         guess = gets.chomp
 
