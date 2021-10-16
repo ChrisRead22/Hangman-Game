@@ -30,6 +30,13 @@ class Hangman
         puts "Enter a letter"
         guess = gets.chomp
 
+        good_guess = @word.first.include? guess
+
+        if good_guess
+            puts "Good guess!"
+        else
+            puts "Sorry... try again"
+        end
     end
 
     def begin
@@ -38,7 +45,8 @@ class Hangman
         print_teaser
 
         puts "Clue: #{ @word.last }"
-        
+
+        make_guess
     end
 
 end
