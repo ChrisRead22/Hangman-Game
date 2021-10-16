@@ -18,8 +18,16 @@ class Hangman
     def begin
 
         puts "New game started... your word is #{ @word.first.size } characters long" 
+        word_teaser = ""
+
+        @word.first.size.times do
+            word_teaser += ""
+        end
+
         puts "Clue: #{ @word.last }"
+
         puts "Enter a letter"
+
         guess = gets.chomp
 
         
