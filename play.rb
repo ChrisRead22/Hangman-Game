@@ -15,15 +15,21 @@ class Hangman
         ]
     end
 
-    def begin
-
-        puts "New game started... your word is #{ @word.first.size } characters long" 
+    def teaser
         word_teaser = ""
 
         @word.first.size.times do
-            word_teaser += ""
+            word_teaser += "_"
         end
 
+
+        puts word_teaser
+    end
+
+    def begin
+
+        puts "New game started... your word is #{ @word.first.size } characters long" 
+        
         puts "Clue: #{ @word.last }"
 
         puts "Enter a letter"
