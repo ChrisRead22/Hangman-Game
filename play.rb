@@ -37,6 +37,8 @@ class Hangman
         if good_guess
             puts "You are correct!"
 
+            @correct_guesses << guess
+
             print_teaser
             make_guess
 
