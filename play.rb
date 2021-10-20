@@ -28,7 +28,7 @@ class Hangman
     end
 
     def update_teaser
-
+        new_teaser = @word_teaser.split
     end
 
     def make_guess
