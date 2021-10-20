@@ -4,6 +4,12 @@ class Hangman
         @letters = ('a'..'z').to_a
         @word = words.sample
         @lives = 7
+        @correct_guesses = []
+        @word_teaser = ""
+
+        @word.first.size.times do
+            word_teaser += "_"
+        end
     end
 
     def words
@@ -19,9 +25,7 @@ class Hangman
     def teaser
         word_teaser = ""
 
-        @word.first.size.times do
-            word_teaser += "_"
-        end
+        
 
 
         puts word_teaser
@@ -38,6 +42,9 @@ class Hangman
             puts "You are correct!"
 
             @correct_guesses << guess
+
+            @letters.delete guess 
+
 
             print_teaser
             make_guess
