@@ -22,7 +22,7 @@ class Hangman
         ]
     end
 
-    def teaser
+    def print_teaser last_guess 
         word_teaser = ""
 
         
