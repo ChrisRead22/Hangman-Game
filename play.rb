@@ -37,6 +37,9 @@ class Hangman
         if good_guess
             puts "You are correct!"
 
+            print_teaser
+            make_guess
+
         else
             @lives -= 1
             puts "Sorry... you have #{ @lives } lives left. Try again"
