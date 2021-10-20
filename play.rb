@@ -22,13 +22,13 @@ class Hangman
         ]
     end
 
-    def print_teaser last_guess 
-        word_teaser = ""
+    def print_teaser last_guess = nil
+        update_teaser unless last_guess.nil?
+        puts @word_teaser
+    end
 
-        
+    def update_teaser
 
-
-        puts word_teaser
     end
 
     def make_guess
@@ -46,7 +46,7 @@ class Hangman
             @letters.delete guess 
 
 
-            print_teaser
+            print_teaser guess
             make_guess
 
         else
