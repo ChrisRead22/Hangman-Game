@@ -35,7 +35,8 @@ class Hangman
         good_guess = @word.first.include? guess
 
         if good_guess
-            puts "Good guess!"
+            puts "You are correct!"
+
         else
             @lives -= 1
             puts "Sorry... you have #{ @lives } lives left. Try again"
