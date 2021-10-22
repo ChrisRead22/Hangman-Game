@@ -17,8 +17,8 @@ class Hangman
             ["cricket", "A game played for gentlemen"],
             ["jogging", "We are not walking..."],
             ["celebrate", "Remembering special moments"],
-            ["continent", "There are 7 of these"],
-            ["exotic", "Not from around here..."],
+            ["continent", "There are 7 of these...What is it"],
+            ["exotic", "Not from around here...Exotic"],
         ]
     end
 
