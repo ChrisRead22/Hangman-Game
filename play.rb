@@ -11,6 +11,7 @@ class Hangman
             word_teaser += "_"
         end
     end
+    
 
     def words
         [
@@ -27,9 +28,11 @@ class Hangman
         puts @word_teaser
     end
 
+
     def update_teaser
         new_teaser = @word_teaser.split
     end
+
 
     def make_guess
         if lives > 0
