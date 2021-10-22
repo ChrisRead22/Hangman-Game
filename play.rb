@@ -14,7 +14,7 @@ class Hangman
 
     def words
         [
-            ["cricket", "A game played by gentlemen"],
+            ["cricket", "A game played for gentlemen"],
             ["jogging", "We are not walking..."],
             ["celebrate", "Remembering special moments"],
             ["continent", "There are 7 of these"],
@@ -57,6 +57,8 @@ class Hangman
     else
         puts "Game Over!!!"
     end
+
+
 
     def begin
 
