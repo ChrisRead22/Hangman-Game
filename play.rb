@@ -15,7 +15,7 @@ class Hangman
     def words
         [
             ["cricket", "A game played for gentlemen"],
-            ["jogging", "We are not walking..."],
+            ["jogging", "We are not walking but ...."],
             ["celebrate", "Remembering special moments"],
             ["continent", "There are 7 of these...What is it"],
             ["exotic", "Not from around here...Exotic"],
