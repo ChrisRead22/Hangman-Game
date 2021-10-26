@@ -37,6 +37,8 @@ class Hangman
                 new_teaser[index] = last_guess
             end
         end
+
+        @word_teaser = new_teaser.join(' ')
     end
 
 
