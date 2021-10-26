@@ -24,17 +24,17 @@ class Hangman
     end
 
     def print_teaser last_guess = nil
-        update_teaser unless last_guess.nil?
+        update_teaser(last_guess) unless last_guess.nil?
         puts @word_teaser
     end
 
 
-    def update_teaser
+    def update_teaser last_guess
         new_teaser = @word_teaser.split
        
         new_teaser.each_with_index do |letter, index|
             if letter == '_' && @word.first.split[index] == last_guess
-                
+                new_teaser[index] = last_guess
             end
         end
     end
