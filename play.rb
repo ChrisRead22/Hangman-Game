@@ -31,6 +31,8 @@ class Hangman
 
     def update_teaser
         new_teaser = @word_teaser.split
+       
+        new_teaser.each_with_index
     end
 
 
